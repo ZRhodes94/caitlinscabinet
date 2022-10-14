@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commission Form</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+  <h3>
+    Please use the form provided below to submit your desired commission item. I will contact you as soon as I can! Time may vary depending on the number in the waiting list. I will provide an email with an estimated time till completion.
+  </h3>
+  <br>
+  <form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname"><br>
+    <label for="email">Email Address:</label><br>
+    <input type="text" id="email" name="email"><br>
+    <br>
+    <div>Please select the item you wish to be commisioned</div>
+    
+    <input type="radio" id="dugeon box" name="item" value="Dungeon Box">
+    <label for="dungeon box">Dugeon Box</label><br>
+    <input type="radio" id="mini" name="item" value="Painted Mini">
+    <label for="mini">Custom Painted Mini</label><br>
+    <input type="radio" id="bracelet" name="item" value="Custom Bracelet">
+    <label for="bracelet">Custom Jewlery</label><br>
+    <br>
+    <label for="description">Description:</label><br>
+    <textarea type="text" id="description" name="comments" rows= "5" cols= "50" style= 'float: left;'>Describe what you are looking for here.</textarea>
+    <br><br><br><br><br>
+    <input type='submit' style= 'float: left;'></input>
+  </form>
+  <br><br><br>
+  <a href= "{% url 'main' %}" >Home</a>
+</body>
+</html>

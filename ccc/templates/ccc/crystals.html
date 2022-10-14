@@ -1,0 +1,123 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Crystal Jewlery</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1>Crystal Jewlery</h1>
+    <div style="margin-bottom: 3000px; margin: auto;">
+      <p style="float: left; font-size: 9pt; text-align: center; width: 30%; margin-right: 1%; margin-bottom: 0.5em;"><img src="{% static 'images/photos/IMG-6157.JPEG' %}" style="width: 100%">Custom Braclet</p>
+      <p style="float: left; font-size: 9pt; text-align: center; width: 30%; margin-right: 1%; margin-bottom: 0.5em;"><img src="{% static 'images/photos/IMG-6186.JPEG' %}" style="width: 100%">Chakra Braclet</p>
+      <p style="float: left; font-size: 9pt; text-align: center; width: 30%; margin-right: 1%; margin-bottom: 0.5em;"><img src="{% static 'images/photos/IMG-2627.JPG' %}" style="width: 100%">Custom Mala</p>
+    </div>
+    <div style="margin-bottom: 30px; margin-top: 30px; width: 500px; margin: auto; opacity: 0;">
+      SPACE
+    </div>
+    <br>
+    <div>
+      <h3>Crystal Options and Meaning</h3>
+      <img src="{% static 'images/crystals/redjasper.jfif'%}"  height= 200px  >
+      <div class = 'crystals'>
+        <h4>Red Jasper</h4>
+        <p>Root Chakra, a warm foundational gem that keeps us rooted</p>
+      </div>
+    </div>
+    <br><br><br>
+    <div>
+      <img src="{% static 'images/crystals/carnelian.jfif'%}" height= 200px  >
+      <div class = 'crystals'>
+        <h4>Carnelian</h4>
+        <p>Sacral Chakra,  a fiery force of creativity and vitality</p>
+      </div>
+    </div>
+    <br><br><br>
+    <div>
+      <img src="{% static 'images/crystals/tigerseye.jfif'%}" height= 200px  >
+      <div class = 'crystals'>
+        <h4>Golden Tiger's Eye</h4>
+        <p>Solar Plexus Chakra, oozing with confidence and mental clarity</p>
+      </div>
+    </div>
+    <br><br><br>
+    <div>
+      <img src="{% static 'images/crystals/aventurine.jfif'%}"  height= 200px  >
+      <div class = 'crystals'>
+        <h4>Green Aventurine</h4>
+        <p>Heart Chakra, optimism and pure heart opening</p>
+      </div>
+    </div>
+    <br><br><br>
+    <div>
+      <img src="{% static 'images/crystals/blueagate.jfif'%}"  height= 200px  >
+      <div class = 'crystals'>
+        <h4>Blue Lace Agate</h4>
+        <p>Throat Chakra, creativity and communication</p>
+      </div>
+    </div>
+    <br><br><br>
+    <div>
+      <img src="{% static 'images/crystals/lapis.jfif'%}"  height= 200px  >
+      <div class = 'crystals'>
+        <h4>Lapis Lazuli</h4>
+        <p>Third Eye Chakra, deep wisdom, truth, and judgement</p>
+      </div>
+    </div>
+    <br><br><br>
+    <div>
+      <img src="{% static 'images/crystals/amethyst.jfif'%}"  height= 200px  >
+      <div class = 'crystals'>
+        <h4>Amethyst</h4>
+        <p>Crown Chakra, sublime serenity, aura enhancement, and easing headaches</p>
+      </div>
+    </div>
+    <br><br><br>
+    <div>
+      <img src="{% static 'images/crystals/moonstone.jfif'%}"  height= 200px  >
+      <div class = 'crystals'>
+        <h4>Moonstone</h4>
+        <p>activating your creative and intuitive power of feminine energy which helps you get in tune with your true emotions</p>
+      </div>
+    </div>
+    <br><br><br>
+    <div>
+      <img src="{% static 'images/crystals/sunstone.jfif'%}"  height= 200px  >
+      <div class = 'crystals'>
+        <h4>Sunstone</h4>
+        <p>inspire good nature and an enjoyment of life</p>
+      </div>
+    </div>
+    <br><br><br>
+    <div>
+      <img src="{% static 'images/crystals/rosequartz.jfif'%}"  height= 200px  >
+      <div class = 'crystals'>
+        <h4>Rose Quartz</h4>
+        <p>support emotional and relationship healing</p>
+      </div>
+    </div>
+    <br><br><br>
+    <div>
+      <img src="{% static 'images/crystals/quartz.jfif'%}"  height= 200px  >
+      <div class = 'crystals'>
+        <h4>Quartz</h4>
+        <p>amplify healing energy</p>
+      </div>
+    </div>
+    <br><br><br>
+    <div>
+      <img src="{% static 'images/crystals/obsidian.jfif'%}"  height= 200px  >
+      <div class = 'crystals'>
+        <h4>Obsidian</h4>
+        <p>grounding, healing, and protection</p>
+      </div>
+    </div>
+    <h2>Interested in creating your own? Complete the <a href="{% url 'form' %}">Commission Form!</a></h2>
+    <br>
+  <a href= "{% url 'main' %}" >Home</a>
+</body>
+</html>

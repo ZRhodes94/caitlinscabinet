@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Minis</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1>Painted Minis</h1>
+
+<figure>
+  <img src="{% static 'images/photos/IMG-7439.JPEG' %}" width = 33% style="float: left;">
+</figure>
+<figure>
+  <img src="{% static 'images/photos/IMG-2631.JPG' %}" width = 33% style="float: left;">
+</figure>
+<figure>
+  <img src="{% static 'images/photos/IMG-7565.JPEG' %}" width = 33% style="float: left;">
+</figure>
+<div style="margin-bottom: 30px; margin-top: 30px; width: 500px; margin: auto; opacity: 0;">
+  SPACE
+</div>
+<h2>Interested in creating your own? Complete the <a href="{% url 'form' %}">Commission Form!</a></h2>
+<br>
+  <a href= "{% url 'main' %}" >Home</a>
+</body>
+</html>

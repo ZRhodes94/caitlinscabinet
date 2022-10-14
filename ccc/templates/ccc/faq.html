@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1>Frequently Asked Questions</h1>
+
+<ol>
+  <li>How long do your custom products take?</li>
+  <p class= 'faq'>Timing depends on the specific item and the length of the waitlist. When I reach out to discus your commission form, I will provide you with a more accurate timeline.</p>
+  <li>Can I request a completely custom product?</li>
+  <p class= 'faq'>I currently only add customizations to my current products.</p>
+  <li>If I remove components from an item, does the price become reduced?</li>
+  <p class= 'faq'>I will not increase the price for removing a component, but the price will not be further reduced for this customization.</p>
+  <li>What is your refund policy?</li>
+  <p class= 'faq'>Based on your provided timeline, I will provide you with the date that you can return your order for a complete refund. Past this date, you will pay a deposit for your product to ensure payment for my work. Once a deposit has been submitted, you will no longer be able to return your item for a complete refund. </p>
+  <li>What happens if my item is lost in the mail?</li>
+  <p class= 'faq'>I track all of my items. If your item is lost in the mail, I will reach out to discuss your options. I can either remake your item- given that you are willing to wait for completion. Or I will provide a complete refund.</p>
+</ol>
+<br>
+  <a href= "{% url 'main' %}" >Home</a>
+</body>
+</html>

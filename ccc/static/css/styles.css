@@ -1,0 +1,140 @@
+* {
+    font-family: 'Papyrus';
+    background-color: #DEB887;
+    font-weight: bold;
+  }
+  
+  div {
+    padding: 0px;
+  }
+  
+  #large_box {
+    border: 5px solid black;
+    height: 200px;
+    width: 240px;
+    background-color: green;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  #large_box #minis {
+    float: left;
+    width: 29%;
+    height: 190px;
+    border: 5px solid blue;
+    background-color: blue;
+  }
+  
+  #large_box #jail {
+    float: left;
+    width: 29%;
+    height: 190px;
+    border: 5px solid yellow;
+    background-color: yellow;
+  }
+  
+  #large_box #storage {
+    float: left;
+    width: 66%;
+    height: 200px;
+    background-color: white;  
+  }
+  
+  #description {
+    float: right;
+    text-align: left;
+    width: 60%;
+  }
+  
+  #med_box {
+    border: 5px solid black;
+    height: 180px;
+    width: 200px;
+    background-color: green;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  #med_box #jail {
+    height:34%;
+    width: 50%;
+    background-color: yellow;
+  }
+  
+  #med_box #minis {
+    height:33%;
+    width: 50%;
+    background-color: blue;
+  }
+  
+  #med_box #empty {
+    height:33%;
+    width: 50%;
+    background-color: white;
+  }
+  
+  #med_box #storage {
+    background-color: white;
+    height: 100%;
+    width: 50%;
+  }
+  
+  #small_box {
+    border: 5px solid;
+    height: 80px;
+    width: 100px;
+    background-color: green;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  #small_box #jail {
+    height:50%;
+    width: 50%;
+    background-color: yellow;
+  }
+  
+  #small_box #minis {
+    height:50%;
+    width: 50%;
+    background-color: blue
+  }
+  
+  #small_box #storage {
+    background-color: white;
+    height: 100%;
+    width: 50%;
+  }
+  
+  #tray {
+    border: 5px solid;
+    height: 80px;
+    width: 100px;
+    background-color: green;
+  }
+  
+  .faq {
+    font-weight: normal;
+  }
+  
+  .crystals {
+    float: right;
+    width: 70%;
+    text-align: left;
+  }
+  
+  .crystals h4 {
+    text-decoration: underline 2px;
+  }
+
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

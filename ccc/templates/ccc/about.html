@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <img src="{% static 'images/photos/IMG-8801.JPEG' %}" width = 33% style="float: left; padding: 15px;">
+    <h1>About Me!</h1>
+    <div>Greetings and salutations my name is Caitlin. I’m a mother of two young children.
+        I have 4 ducks, 4 cats, 3 dogs and 1 boyfriend! I have a household, but I still make time to cure my desires and passions.
+        I love to create and build  things. It started with when I became a single mom. 
+        I was determined to be able to remodel my house on my own. Once I accomplished that task and I learned to use power tools.
+        I wanted to build and create more. I started with simple things that would benefit the household and then just got carried away...
+    </div>
+    <br>
+    <a href= "{% url 'main' %}" >Home</a>
+</body>
+</html>

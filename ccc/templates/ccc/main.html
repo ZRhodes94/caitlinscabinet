@@ -1,0 +1,41 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caitlin's Cabinet</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Caitlin's Cabinet of Custom Curiosities!</h1>
+  </header>
+  
+  <h3>
+  Hello and welcome to my cabiet of curiosities! I love to make  projects with personal meaning. Please browse my shop! If you are interested in commissioning something, please complete the <em><a href="{% url 'form' %}">Commission Form!</a></em>.
+  </h3>
+  
+  <p>Explore my commissionable items below:</p>
+  <ul>
+    <ul>
+      <li><a href="{% url 'dungeonbox' %}">Custom Dungeon Boxes</a></li> 
+      <br>
+      <li><a href="{% url 'minis' %}">Custom Painted Mini Figurines</a></li>
+      <br>
+      <li><a href="{% url 'crystals' %}">Custom Made Crystal Jewlery</a></li>
+    </ul>
+    <br>
+    <div>Looking for a deal? Ask me about my clearance items!</div>
+    <br> 
+    <footer><center>
+      <a href="{% url 'about' %}">About the Creator</a>
+      <br>
+      <a href = "mailto:">Contact Me</a>
+      <br>
+      <a href="{% url 'faq' %}">FAQ</a>
+    </center></footer> 
+</body>
+</html>
